@@ -77,52 +77,11 @@ header{
 }
 
 .portfolio-cards{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
-}
-
-.jamoa-card{
-    width: 100px;
-    height: 300px;
-    border-radius: 20px;
-    padding: 20px;
-    cursor: pointer;
-    color: white;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    transition: all 0.4s linear;
-}
-
-.jamoa-cards{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.jamoa-cards:hover .card1{
-    width: 100px;
-}
-
-.jamoa-card:hover{
-    width: 300px;
-}
-
-.jamoa-cards:hover{
-    width: 200px;
-}
-
-.jamoa-title{
-    text-align: center;
-    color: white;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.flip-card img{
-  border-radius: 10px;
+    gap: 10px;
 }
 
 .otabek{
@@ -130,8 +89,77 @@ header{
   height: 254px;
 }
 
+.flip-card img{
+  border-radius: 10px;
+}
+
+.flib-card{
+  width: 400px;
+  height: 254px;
+}
+
 .card1{
     width: 300px;
+}
+
+.project-title{
+    text-align: center;
+    color: white;
+}
+
+#project{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.project-cards{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.project-card{
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.378);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    transform: skewX(20deg);
+    transition: all 0.4s linear;
+    text-align: center;
+}
+
+.project-card:hover{
+    transform: skewX(0deg);
+}
+
+.project-card h1{
+     color: #0f0;
+     text-shadow: 2px 2px 10px;
+}
+
+.project-card a{
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+    border: 2px solid #0f0;
+    border-radius: 40px;
+    padding: 10px 20px;
+    color: #0f0;
+    transition: all 0.4s linear;
+}
+
+.project-card a:hover{
+    background-color: #0f0;
+    color: white;
+}
+
+.project-card img{
+    width: 100%;
 }
 
 /* From Uiverse.io by SelfMadeSystem */ 

@@ -6,7 +6,7 @@
 }
 
 .container{
-    width: 1320px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -112,55 +112,9 @@ header{
     padding-bottom: 60px;
 }
 
-.project-cards{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
-}
 
-.project-card{
-    width: 350px;
-    background-color: rgba(255, 255, 255, 0.378);
-    backdrop-filter: blur(8px);
-    padding: 20px;
-    border-radius: 20px;
-    color: white;
-    transform: skewX(20deg);
-    transition: all 0.4s linear;
-    text-align: center;
-}
 
-.project-card:hover{
-    transform: skewX(0deg);
-}
 
-.project-card h1{
-     color: #0f0;
-     text-shadow: 2px 2px 10px;
-}
-
-.project-card a{
-    text-align: center;
-    display: block;
-    margin-top: 5px;
-    border: 2px solid #0f0;
-    border-radius: 40px;
-    padding: 10px 20px;
-    color: #0f0;
-    transition: all 0.4s linear;
-}
-
-.project-card a:hover{
-    background-color: #0f0;
-    color: white;
-}
-
-.project-card img{
-    width: 100%;
-}
 
 /* From Uiverse.io by SelfMadeSystem */ 
 /*
@@ -550,14 +504,14 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   }
 }
 
-
 /* From Uiverse.io by joe-watson-sbf */ 
 .flip-card {
   background-color: transparent;
-  width: 190px;
-  height: 254px;
+  width: 320px;
+  height: 300px;
   perspective: 1000px;
   font-family: sans-serif;
+  padding-bottom: 20px;
 }
 
 .title {
@@ -606,3 +560,312 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   color: white;
   transform: rotateY(180deg);
 }
+
+.cards{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.but1{
+  margin-bottom: 30px;
+}
+
+.hero-h1{
+  margin-bottom: 60px;
+}
+
+.hero-p{
+  margin-bottom: 60px;
+}
+
+.but2{
+  margin-bottom: 30px;
+}
+
+.hero-img{
+  width: 400px;
+  margin-left: 300px;
+  margin-bottom: 20px;
+}
+
+.otabek{
+  width: 320px;
+  height: 300px;
+}
+
+
+/* From Uiverse.io by suleymanlaarabidev */ 
+.card {
+  max-width: 500px;
+  width: 100%;
+  height: 254px;
+    background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+     rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+     
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+   background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+     bisque 40%, rgb(255, 185, 160) 78%);
+     
+}
+
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+}
+
+.card:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+}
+
+.card:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+
+.second-content img{
+  width: 190px;
+  height: 254px;
+}
+
+
+
+/* loyihalarim
+
+/* From Uiverse.io by adamgiebl */ 
+.card-project {
+  --background: linear-gradient(to left, #8c43f2 0%, #ff5c00 100%);
+ max-width: 400px;
+  height: 294px;
+  padding: 10px;
+  border-radius: 01rem;
+  overflow: visible;
+  background: #8c43f2;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+}
+
+.card-project::after {
+  position: absolute;
+  content: "";
+  top: 40px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.9);
+  filter: blur(30px);
+  background: #8c43f2;
+  background: var(--background);
+  transition: opacity 0.5s;
+}
+
+.card-info {
+  --color: #ffffff;
+  background: var(--color);
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  border-radius: 0.6rem;
+}
+
+.card-project .title-project {
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+/*Hover*/
+.card-project:hover::after {
+  opacity: 0;
+}
+
+.card-project:hover .card-info {
+  color: #8c43f2;
+  transition: color 1s;
+}
+
+.project{
+  max-width: 365px;
+  height: 272px;
+  border-radius: 01rem;
+}
+
+.card-project{
+  display: flex;
+  gap: 40px;
+}
+
+/* loading
+
+/* From Uiverse.io by aliaypov1 */ 
+
+.Load{
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  animation: ochir 4s forwards;
+}
+
+@keyframes ochir {
+  0%{
+    opacity: 1;
+  }50%{
+    opacity: 1;
+  }100%{
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.loader {
+  --uib-size: 2.8rem;
+  --uib-speed: .9s;
+  --uib-color: #183153;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: var(--uib-size);
+  width: var(--uib-size);
+}
+
+.loaders {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.loaders::before {
+  content: '';
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+  background-color: var(--uib-color);
+  transform: scale(0);
+  opacity: 0.5;
+  animation: pulse0112 calc(var(--uib-speed) * 1.111) ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(18, 31, 53, 0.3);
+  padding-bottom: 222px;
+}
+
+.loaders:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.loaders:nth-child(2)::before {
+  animation-delay: calc(var(--uib-speed) * -0.875);
+}
+
+.loaders:nth-child(3) {
+  transform: rotate(90deg);
+}
+
+.loaders:nth-child(3)::before {
+  animation-delay: calc(var(--uib-speed) * -0.75);
+}
+
+.loaders:nth-child(4) {
+  transform: rotate(135deg);
+}
+
+.loaders:nth-child(4)::before {
+  animation-delay: calc(var(--uib-speed) * -0.625);
+}
+
+.loaders:nth-child(5) {
+  transform: rotate(180deg);
+}
+
+.loaders:nth-child(5)::before {
+  animation-delay: calc(var(--uib-speed) * -0.5);
+}
+
+.loaders:nth-child(6) {
+  transform: rotate(225deg);
+}
+
+.loaders:nth-child(6)::before {
+  animation-delay: calc(var(--uib-speed) * -0.375);
+}
+
+.dot-spinner__dot:nth-child(7) {
+  transform: rotate(270deg);
+}
+
+.loaders:nth-child(7)::before {
+  animation-delay: calc(var(--uib-speed) * -0.25);
+}
+
+.loaders:nth-child(8) {
+  transform: rotate(315deg);
+}
+
+.loaders:nth-child(8)::before {
+  animation-delay: calc(var(--uib-speed) * -0.125);
+}
+
+@keyframes pulse0112 {
+  0%,
+  100% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+

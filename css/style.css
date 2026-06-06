@@ -561,10 +561,16 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   transform: rotateY(180deg);
 }
 
-.cards{
+.carts{
   display: flex;
   gap: 30px;
   align-items: center;
+}
+
+.h1-title{
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .but1{

@@ -596,7 +596,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 
 
 /* From Uiverse.io by suleymanlaarabidev */ 
-.card {
+.cart {
   max-width: 500px;
   width: 100%;
   height: 254px;
@@ -610,7 +610,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   font-weight: 900;
 }
 
-.card:hover {
+.cart:hover {
   border-radius: 15px;
   cursor: pointer;
   transform: scale(1.1);
@@ -631,7 +631,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   border-radius: 15px;
 }
 
-.card:hover .first-content {
+.cart:hover .first-content {
   height: 0px;
   opacity: 0;
 }
@@ -649,7 +649,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   transform: rotate(90deg) scale(-1);
 }
 
-.card:hover .second-content {
+.cart:hover .second-content {
   opacity: 1;
   height: 100%;
   font-size: 1.8rem;
@@ -667,7 +667,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 
 /* From Uiverse.io by adamgiebl */ 
 .card-project {
-  --background: linear-gradient(to left, #8c43f2 0%, #ff5c00 100%);
+--background: linear-gradient(to left, #8c43f2 0%, #ff5c00 100%);
  max-width: 400px;
   height: 294px;
   padding: 10px;
@@ -869,3 +869,77 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 }
 
 
+/* From Uiverse.io by gharsh11032000 */ 
+.card {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover {
+  transform: rotate(-5deg) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover .card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.card:hover svg {
+  scale: 0;
+  transform: rotate(-45deg);
+}
+
+.card img{
+  width: 400px;
+}
+
+.card a{
+  padding: 15px 15px;
+  background-color: #00D6AF;
+  border-radius: 20px;
+  margin-left: 80px;
+  margin-bottom: 80px;
+}

@@ -52,6 +52,7 @@ header{
     text-align: center;
     margin-top: 20px;
     color: white;
+    margin-bottom: 60px;
 }
 
 .portfolio-info{
@@ -561,6 +562,10 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   transform: rotateY(180deg);
 }
 
+.cart img{
+  width: 400px;
+}
+
 .carts{
   display: flex;
   gap: 30px;
@@ -635,6 +640,12 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   align-items: center;
   opacity: 1;
   border-radius: 15px;
+}
+
+.first-content span{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
 }
 
 .cart:hover .first-content {

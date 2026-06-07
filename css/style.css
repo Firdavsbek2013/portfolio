@@ -876,7 +876,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 
 
 /* From Uiverse.io by gharsh11032000 */ 
-.card {
+.card{
   position: relative;
   width: 400px;
   height: 200px;
@@ -948,4 +948,9 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   border-radius: 20px;
   margin-left: 80px;
   margin-bottom: 80px;
+}
+
+.cards{
+  display: flex;
+  gap: 20px;
 }
